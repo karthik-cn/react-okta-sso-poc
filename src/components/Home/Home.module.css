@@ -1,0 +1,9 @@
+.userLoginStatus {
+  margin: 32px 0;
+}
+
+.userDashboardLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+}
