@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import styles from './Header.module.css';
 import UserContext from "../../../contexts/UserContext";
 import { useOktaAuth } from '@okta/okta-react';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const { user,  isAuthenticated} = useContext(UserContext);
@@ -25,7 +26,9 @@ function Header() {
     return (
         <header className={styles.Header}>
             <div className={styles.Content}>
-                <div className={styles.brand}>OKTA React SSO Demo</div>
+                <div className={styles.brand}>
+                    <Link to="/" className={styles.brandLink}>OKTA React SSO Demo</Link>
+                </div>
 
                 <div>
                     {getLoginStateDisplay()}

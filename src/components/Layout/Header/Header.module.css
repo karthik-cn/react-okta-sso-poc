@@ -16,6 +16,11 @@
     font-size: 24px;
 }
 
+.brandLink {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 .authButton {
     padding: 10px 20px;
     border-radius: 5px;
